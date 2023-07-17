@@ -30,7 +30,7 @@ fetch('https://restcountries.com/v3.1/all')
         background: 'black',
       },
       theme: {
-        palette: 'palette4'
+        palette: 'palette10'
       },
       series: [
         {
