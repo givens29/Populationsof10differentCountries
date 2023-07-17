@@ -26,7 +26,7 @@ fetch('https://restcountries.com/v3.1/all')
         opacity: 1
       },
       chart: {
-        type: 'bar',
+        type: 'area',
         background: 'black',
       },
       theme: {
