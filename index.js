@@ -12,19 +12,25 @@ fetch('https://restcountries.com/v3.1/all')
       title: {
         text: "Populations in 10 different countries",
         align: 'center',
-        margin: 50,
+        margin: 100,
     offsetX: 0,
     offsetY: 0,
     floating: false,
     style: {
-      fontSize:  '40px',
-      fontWeight:  'bold',
-      fontFamily:  undefined,
-      color:  '#263238'
+      fontSize:  '30px',
+      fontFamily:  'Georgia',
+      color:  'white'
     },
+      },
+      fill: {
+        opacity: 1
       },
       chart: {
         type: 'bar',
+        background: 'black',
+      },
+      theme: {
+        palette: 'palette4'
       },
       series: [
         {
@@ -32,8 +38,27 @@ fetch('https://restcountries.com/v3.1/all')
           data: data,
         },
       ],
+      grid: {
+        borderColor: 'white',
+        strokeDashArray: 7,
+      },
       xaxis: {
         type: 'category',
+        labels: {
+          style: {
+            colors: 'white',
+            fontFamily: 'serif',
+            fontSize: '15px',
+          }
+        }
+      },
+      yaxis: {
+        type: 'category',
+        labels: {
+          style: {
+            colors: 'white'
+          }
+        }
       },
       dataLabels: {
         enabled: false
